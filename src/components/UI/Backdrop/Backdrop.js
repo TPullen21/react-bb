@@ -1,10 +1,9 @@
 import React from 'react';
 
-import classes from './BuildControl.css'
+import classes from './Backdrop.css'
 
 const backdrop = (props) => (
-    <div className={classes.BuildControl}>
-    </div>
+    props.show ? <div className={classes.Backdrop} onClick={props.clicked}></div> : null
 );
 
 export default backdrop;
